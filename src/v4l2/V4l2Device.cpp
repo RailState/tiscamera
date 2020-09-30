@@ -86,6 +86,7 @@ V4l2Device::V4l2Device (const DeviceInfo& device_desc)
 
     this->index_all_controls(property_handler);
     this->index_formats();
+    framerate_conversions.push_back(framerate_conv{0.1, 1, 10});
 }
 
 
